@@ -1,76 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fitness Progress Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">🏋️‍♂️ Fitness Progress Tracker</h1>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="add.html">Add Workout</a></li>
+      <li><a href="view.html">View Workouts</a></li>
+      <li><a href="charts.html">Charts</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 
-  <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">Fitness Progress Tracker</h1>
-      <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="add.html">Add Workout</a>
-        <a href="view.html">View Workouts</a>
-        <a href="charts.html">Charts</a>
-        <a href="about.html">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="hero">
-    <div class="container">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
       <h2>Log workouts, track calories, and visualize weekly progress.</h2>
-      <div class="features">
-        <div class="feature">
-          <h3>Log Workouts</h3>
-          <p>Create and manage your daily workout sessions.</p>
-        </div>
-        <div class="feature">
-          <h3>Manage Sessions</h3>
-          <p>View, edit and delete your logged data easily.</p>
-        </div>
-        <div class="feature">
-          <h3>Visual Analytics</h3>
-          <p>Track calories, goals, and workout trends.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <section class="dashboard">
-    <div class="container">
-      <div class="card">
-        <h4>Total Workouts</h4>
-        <p id="totalWorkouts">0</p>
-      </div>
-      <div class="card">
-        <h4>Total Calories Burned</h4>
-        <p id="totalCalories">0</p>
-      </div>
-      <div class="card">
-        <h4>Goal Progress</h4>
-        <p id="goalProgress">0%</p>
+      <p>Stay consistent and meet your fitness goals one workout at a time.</p>
+      <div class="hero-buttons">
+        <a href="add.html" class="btn primary">Add Workout</a>
+        <a href="charts.html" class="btn secondary">View Charts</a>
       </div>
     </div>
   </section>
 
-  <section class="cta">
-    <div class="container">
-      <a class="btn" href="add.html">Add Workout</a>
-      <a class="btn btn-alt" href="charts.html">View Charts</a>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h3>🏋️‍♀️ Log Workouts</h3>
+      <p>Create and manage your daily workout sessions easily.</p>
+    </div>
+    <div class="feature">
+      <h3>📋 Manage Sessions</h3>
+      <p>View, edit, and delete your logged data seamlessly.</p>
+    </div>
+    <div class="feature">
+      <h3>📊 Visual Analytics</h3>
+      <p>Track calories, goals, and workout trends at a glance.</p>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Fitness Progress Tracker | Your Name</p>
+  <!-- Summary Cards -->
+  <section class="summary">
+    <div class="card">
+      <h4>Total Workouts</h4>
+      <p id="workouts">0</p>
     </div>
+    <div class="card">
+      <h4>Total Calories Burned</h4>
+      <p id="calories">0</p>
+    </div>
+    <div class="card">
+      <h4>Goal Progress</h4>
+      <p id="progress">0%</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Fitness Progress Tracker | Designed by Kajal</p>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
